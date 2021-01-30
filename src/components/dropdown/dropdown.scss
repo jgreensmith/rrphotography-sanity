@@ -1,0 +1,30 @@
+@import '../../styles/variables.scss';
+@import '../../styles/base.scss';
+
+
+.dropdown-menu {
+    width: 200px;
+    z-index: 3;
+    position: absolute;
+    top: 80px;
+    list-style: none;
+    text-align: start;
+    &.clicked {
+        display: none;
+    }
+}
+.dropdown-menu li {
+    background-color: $brand-secondary;
+    cursor: pointer;
+    &:hover {
+        background: #fff;
+    }
+}
+.dropdown-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+    padding: 16px;
+}

@@ -1,0 +1,36 @@
+@import '../../styles/variables.scss';
+@import '../../styles/base.scss';
+
+
+.object-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.img-fit {
+    width: 300px;
+    border-radius: 50%;
+}
+.home-header {
+    color: #5f5f5f;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 300;
+    margin: auto;
+    padding-bottom: 15px;
+}
+.blurb {
+    color: #5f5f5f;
+    line-height: 1rem;
+}
+.decoration {
+    text-decoration: none;
+}
+.object-wrapper {
+    padding: 40px;
+    transition: .2s ease-in-out;
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.02);
+    }
+}

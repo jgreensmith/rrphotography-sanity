@@ -1,0 +1,13 @@
+.section {
+    display: block;
+    background-color: #fff;
+    padding: 2rem 1rem;
+    &.secondary {
+        background-color: $brand-secondary;
+    }
+}
+.block-container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+}
