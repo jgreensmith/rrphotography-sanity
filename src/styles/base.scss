@@ -1,5 +1,6 @@
 .section {
     display: block;
+    box-sizing: border-box;
     background-color: #fff;
     padding: 2rem 1rem;
     &.secondary {
@@ -7,7 +8,18 @@
     }
 }
 .block-container {
-    max-width: 1140px;
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
+}
+
+@media(max-width: 960px) {
+    .block-container {
+        width: 96%;
+        margin: 0 auto;
+    }
+}
+@media(max-width: 360px) {
+    .block-container {
+        width: 100%;
+    }
 }

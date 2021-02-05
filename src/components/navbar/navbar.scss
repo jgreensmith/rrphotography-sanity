@@ -10,6 +10,7 @@
     font-size: 1.2rem;
     border-bottom: 1px solid #eee;
     padding-bottom: 7px;
+    margin: 0 auto;
   }
   
   .brand-wrapper {
@@ -18,7 +19,7 @@
     margin-left: 20px;
     text-decoration: none;
     max-width: 80%;
-    padding: 10px 0;
+    padding: 10px 2px;
     
   }
   .brand-title {
@@ -160,5 +161,10 @@
   
     button {
       display: none;
+    }
+  }
+  @media(max-width: 360px) {
+    .brand-wrapper {
+      margin-left: 10px;
     }
   }

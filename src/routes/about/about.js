@@ -43,7 +43,7 @@ function About() {
                             please let me know and I will make the donation on your behalf.</p>
                     </div>
                     <div className="profile-photo-wrapper">
-                        <img className="temp-img-size" src="/images/about-profilephoto.jpg" alt="Profile"></img>
+                        <img className="temp-img-size" src="/images/home/profile-og.jpg" alt="Profile"></img>
                     </div>
                 </div>
                 

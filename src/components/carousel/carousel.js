@@ -9,27 +9,33 @@ class HomeCarousel extends Component {
             <div className="carousel-wrapper">
                 <Carousel 
                     showThumbs={false} 
-                    autoPlay={false} 
+                    autoPlay={true} 
                     infiniteLoop={true} 
-                    interval={7000}
-                    transitionTime={1000}
+                    interval={8000}
+                    transitionTime={700}
                     dynamicHeight={true}
-                    showArrows={true}
+                    showArrows={false}
                     showStatus={false}
                     stopOnHover={false}
                     showIndicators={true}
                 >
                     <div>
-                        <img src="images/LS.jpg" />
+                        <img src="images/home/dog-og.jpg" />
                     </div>
                     <div>
-                        <img src="images/shadow-birdz.jpg" />
+                        <img src="images/home/autumn-og.jpg" />
                     </div>
                     <div>
-                        <img src="images/dogz.jpg" />
+                        <img src="images/home/bus-lane-og.jpg" />
                     </div>
                     <div>
-                        <img src="images/waterfall.jpg" />
+                        <img src="images/home/falls-og.jpg" />
+                    </div>
+                    <div>
+                        <img src="images/home/orange-og.jpg" />
+                    </div>
+                    <div>
+                        <img src="images/home/bug-og.jpg" />
                     </div>
                 </Carousel>
             </div>
