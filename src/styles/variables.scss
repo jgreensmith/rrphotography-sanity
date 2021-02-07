@@ -3,7 +3,6 @@ $brand-primary: #fff;
 $brand-secondary: #F1F3Fa;
 $brand-logo: #4e1768ec; 
 
-// #F1F3Fa;
 
 $font-color-primary: #665372;
 $font-color-secondary: #aaaaaa;
@@ -24,5 +23,9 @@ $font-color-secondary: #aaaaaa;
     font-size: 24px;
     font-weight: 400;
     color: #5f5f5f;
+}
+
+.heading {
+    padding-bottom: 50px;
 }
 

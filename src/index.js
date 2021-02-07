@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import SimpleReactLightbox from 'simple-react-lightbox';
 import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <SimpleReactLightbox>
+      <App />
+    </SimpleReactLightbox> 
   </React.StrictMode>,
   document.getElementById('root')
 );

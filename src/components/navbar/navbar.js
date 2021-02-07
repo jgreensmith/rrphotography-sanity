@@ -1,3 +1,4 @@
+
 import React, { useRef, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Dropdown from '../dropdown/dropdown';
@@ -60,11 +61,11 @@ function Navbar() {
                     </Link>
                     {dropdown && <Dropdown/>}
                 </li>
-                <li className="nav-item">
+                {/* <li className="nav-item">
                     <Link to='/blog' className="nav-link" onClick={closeMobileMenu}>
                         Blog
                     </Link>
-                </li>
+                </li> */}
                 <li className="nav-item">
                     <Link to='/contact' className="nav-link" onClick={closeMobileMenu}>
                         Contact

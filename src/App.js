@@ -6,6 +6,11 @@ import Navbar from './components/navbar';
 import About from './routes/about';
 import Home from './routes/home';
 import Footer from './components/footer/footer';
+import Landscape from './routes/gallery/landscape';
+import Wildlife from './routes/gallery/wildlife';
+import Cyanotype from './routes/gallery/cyanotype';
+import BlackWhite from './routes/gallery/black-white';
+import Gallery from './routes/gallery/gallery';
 
 const App = () => (
   <Router>
@@ -17,22 +22,19 @@ const App = () => (
                 <About/>
               </Route>
               <Route path="/gallery">
-                <h2>Gallery</h2>
+                <Gallery/>
               </Route>
               <Route path="/landscape">
-                <h1>landz</h1> 
+                <Landscape/>
               </Route>
               <Route path="/wildlife">
-                <h1>birdz</h1> 
+                <Wildlife/> 
               </Route>
               <Route path="/cyanotype">
-                <h1>cyano</h1>
+                <Cyanotype/>
               </Route>
               <Route path="/black-white">
-                <h1>b/w</h1> 
-              </Route>
-              <Route path="/blog">
-                  <h1>Calendar</h1> 
+                <BlackWhite/> 
               </Route>
               <Route path="/contact">
                   <h1>Giz a ring</h1> 
