@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Button from '../../components/button';
 
 import './gallery.scss';
 
@@ -10,12 +11,12 @@ function Gallery() {
         <section className="section">
             <div className="block-container">
             <h1 className="main-title heading">Gallery</h1>
-
+                <Button/>
                 <div className="object-container">
                     <div className="object-wrapper">
                         <Link to='/landscape' className="decoration">
                             <div className="object-img-wrapper">
-                                <img className="img-fit" src="images/landscape-circle.jpg" alt="Landscape"></img>
+                                <img className="img-fit" src="images/home/ls-circle.jpg" alt="Landscape"></img>
                             </div>
                             <div className="object-info-wrapper">
                                 <h3 className="blurb-header">Landscape Photography</h3>
@@ -27,7 +28,7 @@ function Gallery() {
                     <div className="object-wrapper">
                         <Link to='/wildlife' className="decoration">
                             <div className="object-img-wrapper">
-                                <img className="img-fit" src="images/landscape-circle.jpg" alt="Landscape"></img>
+                                <img className="img-fit" src="images/home/wl-circle.jpg" alt="Landscape"></img>
                             </div>
                             <div className="object-info-wrapper">
                                 <h3 className="blurb-header">Wildlife Photography</h3>
@@ -38,7 +39,7 @@ function Gallery() {
                     <div className="object-wrapper">
                         <Link to='/cyanotype' className="decoration">
                             <div className="object-img-wrapper">
-                                <img className="img-fit" src="images/landscape-circle.jpg" alt="Landscape"></img>
+                                <img className="img-fit" src="images/home/c-circle.jpg" alt="Landscape"></img>
                             </div>
                             <div className="object-info-wrapper">
                                 <h3 className="blurb-header">Cyanotype Art</h3>
@@ -49,7 +50,7 @@ function Gallery() {
                     <div className="object-wrapper">
                         <Link to='/black-white' className="decoration">
                             <div className="object-img-wrapper">
-                                <img className="img-fit" src="images/landscape-circle.jpg" alt="Landscape"></img>
+                                <img className="img-fit" src="images/home/bw-circle.jpg" alt="Landscape"></img>
                             </div>
                             <div className="object-info-wrapper">
                                 <h3 className="blurb-header">Black & White Photography</h3>

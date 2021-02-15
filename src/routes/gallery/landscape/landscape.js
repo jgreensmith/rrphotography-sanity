@@ -14,8 +14,8 @@ function Landscape() {
                         {LsImages.map((LsImages, index) => {
                             return(
                                 <div className="gallery-square" key={index}>
-                                    <a className="img-centre" href={`/images/${LsImages.imageName}`}>
-                                        <img className={LsImages.cName} src={`/images/${LsImages.imageName}`}></img>
+                                    <a className="img-centre" href={`/images/ls-images/${LsImages.imageName}`}>
+                                        <img className={LsImages.cName} src={`/images/ls-images/small-${LsImages.imageName}`}></img>
                                     </a> 
                                 </div>
                             )

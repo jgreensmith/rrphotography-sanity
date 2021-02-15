@@ -10,6 +10,15 @@ function About() {
                 <h1 className="main-title heading">About Me</h1>
                 <div className="about-container">
                     <div className="about-info-wrapper">
+                        <h3 className="blurb-header">
+                            Made in the Marches - Photographer of the year 2020
+                        </h3>
+                        <p className="about-info">
+                            visit the resident artists section of the 
+                            <a href="http://www.madeinthemarches.com/rebecca-reynolds-resident.html" target="_blank" rel="noreferrer">
+                                <br></br>Made in the Marches website.
+                            </a>
+                        </p>
                         <p className="about-info">
                             My aim is for my photography and art to show my love for the British countryside
                             and the tranquility it gives. Having family and friends who live with long-term conditions,
@@ -42,11 +51,12 @@ function About() {
                             If you would like any profits from your purchase to go to a charity of your choice, 
                             please let me know and I will make the donation on your behalf.</p>
                     </div>
-                    <div className="profile-photo-wrapper">
-                        <img className="temp-img-size" src="/images/home/profile-og.jpg" alt="Profile"></img>
+                    <div className="profile-wrapper">
+                        <div className="profile-photo-wrapper">
+                            <img className="temp-img-size" src="/images/home/profile-og.jpg" alt="Profile"></img>
+                        </div>
                     </div>
                 </div>
-                
             </div>
         </section> 
     )

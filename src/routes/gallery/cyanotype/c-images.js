@@ -1,36 +1,74 @@
 const CImages = [
     {
-        imageName: 'plantz.jpg',
+        imageName: 'along-detail.jpg',
+        cName: 'img-landscape',
+    },
+    {
+        imageName: 'botanic-blue.jpg',
         cName: 'img-portrait',
     },
     {
-        imageName: 'plantz.jpg',
+        imageName: 'field-grass.jpg',
         cName: 'img-portrait',
     },
     {
-        imageName: 'plantz.jpg',
+        imageName: 'buttercup-y.jpg',
         cName: 'img-portrait',
     },
     {
-        imageName: 'plantz.jpg',
+        imageName: 'alongthelane.jpg',
+        cName: 'img-landscape',
+    },
+    {
+        imageName: 'fossil.jpg',
+        cName: 'img-landscape',
+    },
+    {
+        imageName: 'gift-tags.jpg',
+        cName: 'img-landscape',
+    },
+    {
+        imageName: 'frosted-blue.jpg',
         cName: 'img-portrait',
     },
     {
-        imageName: 'plantz.jpg',
+        imageName: 'blue-print.jpg',
         cName: 'img-portrait',
     },
     {
-        imageName: 'plantz.jpg',
+        imageName: 'hedgerow.jpg',
+        cName: 'img-landscape',
+    },
+    {
+        imageName: 'kate.jpg',
+        cName: 'img-landscape',
+    },
+    {
+        imageName: 'leaves.jpg',
         cName: 'img-portrait',
     },
     {
-        imageName: 'plantz.jpg',
+        imageName: 'lunar.jpg',
+        cName: 'img-landscape',
+    },{
+        imageName: 'meadow.jpg',
+        cName: 'img-portrait',
+    },{
+        imageName: 'parsley.jpg',
+        cName: 'img-portrait',
+    },{
+        imageName: 'stone.jpg',
         cName: 'img-portrait',
     },
     {
-        imageName: 'plantz.jpg',
-        cName: 'img-portrait',
+        imageName: 'snow-p.jpg',
+        cName: 'img-landscape',
     },
+    {
+        imageName: 'solar-shrub.jpg',
+        cName: 'img-landscape',
+    },
+    
 ]
 
 export default CImages;

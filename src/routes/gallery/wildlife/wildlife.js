@@ -14,8 +14,8 @@ function Wildlife() {
                         {WlImages.map((WlImages, index) => {
                             return(
                                 <div className="gallery-square" key={index}>
-                                    <a className="img-centre" href={`/images/${WlImages.imageName}`}>
-                                        <img className={WlImages.cName} src={`/images/${WlImages.imageName}`}></img>
+                                    <a className="img-centre" href={`/images/wl-images/${WlImages.imageName}`}>
+                                        <img className={WlImages.cName} src={`/images/wl-images/small-${WlImages.imageName}`}></img>
                                     </a> 
                                 </div>
                             )

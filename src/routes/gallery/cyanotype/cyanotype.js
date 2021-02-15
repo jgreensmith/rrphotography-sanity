@@ -14,8 +14,8 @@ function Cyanotype() {
                         {CImages.map((CImages, index) => {
                             return(
                                 <div className="gallery-square" key={index}>
-                                    <a className="img-centre" href={`/images/${CImages.imageName}`}>
-                                        <img className={CImages.cName} src={`/images/${CImages.imageName}`}></img>
+                                    <a className="img-centre" href={`/images/c-images/${CImages.imageName}`}>
+                                        <img className={CImages.cName} src={`/images/c-images/small-${CImages.imageName}`}></img>
                                     </a> 
                                 </div>
                             )

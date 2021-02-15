@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.scss';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
 
 import Navbar from './components/navbar';
 import About from './routes/about';
@@ -11,6 +13,9 @@ import Wildlife from './routes/gallery/wildlife';
 import Cyanotype from './routes/gallery/cyanotype';
 import BlackWhite from './routes/gallery/black-white';
 import Gallery from './routes/gallery/gallery';
+import Contact from './routes/contact/contact';
+
+library.add(fab);
 
 const App = () => (
   <Router>
@@ -37,7 +42,7 @@ const App = () => (
                 <BlackWhite/> 
               </Route>
               <Route path="/contact">
-                  <h1>Giz a ring</h1> 
+                  <Contact/> 
               </Route>
               <Route path="/">
                 <Home/>

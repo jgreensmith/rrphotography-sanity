@@ -14,8 +14,8 @@ function BlackWhite() {
                         {BwImages.map((BwImages, index) => {
                             return(
                                 <div className="gallery-square" key={index}>
-                                    <a className="img-centre" href={`/images/${BwImages.imageName}`}>
-                                        <img className={BwImages.cName} src={`/images/${BwImages.imageName}`}></img>
+                                    <a className="img-centre" href={`/images/bw-images/${BwImages.imageName}`}>
+                                        <img className={BwImages.cName} src={`/images/bw-images/small-${BwImages.imageName}`}></img>
                                     </a> 
                                 </div>
                             )

@@ -1,7 +1,9 @@
 @import '../../styles/variables.scss';
 @import '../../styles/base.scss';
 
-
+.btn-padding {
+    padding-top: 30px;
+}
 .object-container {
     display: flex;
     flex-wrap: wrap;

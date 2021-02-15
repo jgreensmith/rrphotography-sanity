@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import HomeCarousel from '../../components/carousel';
+import Button from '../../components/button';
 
 import './home.scss';
 
@@ -15,6 +16,9 @@ function Home() {
             <div className="block-container">
                 <h2 className="home-header">Welcome to Rebecca Reynolds Photography</h2>
                 <p className="main-title sm">Bringing focus to the natural world.</p>
+                <div className="btn-padding">
+                    <Button/>
+                </div>
                 <div className="object-container">
                     <div className="object-wrapper">
                         <Link to='/landscape' className="decoration">
