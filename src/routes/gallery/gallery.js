@@ -43,7 +43,7 @@ function Gallery() {
                             </div>
                             <div className="object-info-wrapper">
                                 <h3 className="blurb-header">Cyanotype Art</h3>
-                                <p className="blurb">Inspired by the natural landscape</p>
+                                <p className="blurb">Inspired by the Natural Landscape</p>
                             </div>
                         </Link>
                     </div>

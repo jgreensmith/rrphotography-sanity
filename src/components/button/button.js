@@ -25,7 +25,9 @@ const Button = () => {
                 <div className="btn-card">
                     <div className="btn-info-wrapper">
                         <p className="btn-text">
-                            Made in the Marches - Photographer of the year 2020
+                            Made in the Marches Resident Artist 
+                            <br></br>
+                            <span className="small-text"> Border Monochrome Photographer of the Year 2020</span> 
                         </p>
                     </div>
                     <div className="btn-wrapper">

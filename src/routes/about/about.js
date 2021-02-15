@@ -11,7 +11,7 @@ function About() {
                 <div className="about-container">
                     <div className="about-info-wrapper">
                         <h3 className="blurb-header">
-                            Made in the Marches - Photographer of the year 2020
+                            Made in the Marches Resident Artist - Border Monochrome Photographer of the year 2020
                         </h3>
                         <p className="about-info">
                             visit the resident artists section of the 
