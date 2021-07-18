@@ -6,7 +6,8 @@ https://www.rebeccareynoldsphotography.com/
 React\
 node.js\
 SCSS\
-AWS-Amplify
+AWS-Amplify\
+GraphQL
 
 ### `npm start`
 
