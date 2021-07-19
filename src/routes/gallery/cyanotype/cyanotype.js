@@ -15,7 +15,7 @@ function Cyanotype() {
                             return(
                                 <div className="gallery-square" key={index}>
                                     <a className="img-centre" href={`/images/c-images/${CImages.imageName}`}>
-                                        <img className={CImages.cName} src={`/images/c-images/${CImages.imageName}`}></img>
+                                        <img className={CImages.cName} src={`/images/c-images/${CImages.imageName}`} alt="Cyanotypes"></img>
                                     </a> 
                                 </div>
                             )

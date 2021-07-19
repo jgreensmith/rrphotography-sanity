@@ -15,7 +15,7 @@ function Landscape() {
                             return(
                                 <div className="gallery-square" key={index}>
                                     <a className="img-centre" href={`/images/ls-images/${LsImages.imageName}`}>
-                                        <img className={LsImages.cName} src={`/images/ls-images/${LsImages.imageName}`}></img>
+                                        <img className={LsImages.cName} src={`/images/ls-images/${LsImages.imageName}`} alt="Landscapes"></img>
                                     </a> 
                                 </div>
                             )
