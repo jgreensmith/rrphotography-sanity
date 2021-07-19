@@ -10,7 +10,7 @@ function Home() {
     return(
 
         <section className="section">
-            <div className="block-container">
+            <div className="carousel-container">
                 <HomeCarousel/>
             </div>
             <div className="block-container">

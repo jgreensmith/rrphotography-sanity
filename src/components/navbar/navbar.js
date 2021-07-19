@@ -31,47 +31,47 @@ function Navbar() {
     return (
         <>
         <nav className="main-nav">
-            <div className="brand-wrapper">
-                <div className="brand-title">
-                    <span className="span-title">Rebecca Reynolds </span>
-                    Photography
+            <Link to='/' className="brand-wrapper" onClick={closeMobileMenu}>
+                    <div className="brand-title">
+                            <span className="span-title">Rebecca Reynolds </span>
+                            Photography
+                    </div>
+            </Link>
+                <div className="menu-icon" onClick={handleClick}>
+                    <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
                 </div>
-            </div>
-            <div className="menu-icon" onClick={handleClick}>
-                <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
-            </div>
-            <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-                <li className="nav-item">
-                    <Link to='/' className="nav-link" onClick={closeMobileMenu}>
-                        Home
-                    </Link>
-                </li>
-                <li className="nav-item">
-                    <Link to='/about' className="nav-link" onClick={closeMobileMenu}>
-                        About
-                    </Link>
-                </li>
-                <li 
-                    className="nav-item"
-                    onMouseEnter={onMouseEnter}
-                    onMouseLeave={onMouseLeave}
-                >
-                    <Link to='/gallery' className="nav-link" onClick={closeMobileMenu}>
-                        Gallery <span className="fas fa-caret-down"></span>
-                    </Link>
-                    {dropdown && <Dropdown/>}
-                </li>
-                {/* <li className="nav-item">
-                    <Link to='/blog' className="nav-link" onClick={closeMobileMenu}>
-                        Blog
-                    </Link>
-                </li> */}
-                <li className="nav-item">
-                    <Link to='/contact' className="nav-link" onClick={closeMobileMenu}>
-                        Contact
-                    </Link>
-                </li>
-            </ul>
+                <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+                    <li className="nav-item">
+                        <Link to='/' className="nav-link" onClick={closeMobileMenu}>
+                            Home
+                        </Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link to='/about' className="nav-link" onClick={closeMobileMenu}>
+                            About
+                        </Link>
+                    </li>
+                    <li 
+                        className="nav-item"
+                        onMouseEnter={onMouseEnter}
+                        onMouseLeave={onMouseLeave}
+                    >
+                        <Link to='/gallery' className="nav-link" onClick={closeMobileMenu}>
+                            Gallery <span className="fas fa-caret-down"></span>
+                        </Link>
+                        {dropdown && <Dropdown/>}
+                    </li>
+                    {/* <li className="nav-item">
+                        <Link to='/blog' className="nav-link" onClick={closeMobileMenu}>
+                            Blog
+                        </Link>
+                    </li> */}
+                    <li className="nav-item">
+                        <Link to='/contact' className="nav-link" onClick={closeMobileMenu}>
+                            Contact
+                        </Link>
+                    </li>
+                </ul>
         </nav>
         <br></br>
         </>

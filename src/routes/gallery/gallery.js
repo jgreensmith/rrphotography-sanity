@@ -11,7 +11,6 @@ function Gallery() {
         <section className="section">
             <div className="block-container">
             <h1 className="main-title heading">Gallery</h1>
-                <Button/>
                 <div className="object-container">
                     <div className="object-wrapper">
                         <Link to='/landscape' className="decoration">
@@ -59,7 +58,7 @@ function Gallery() {
                         </Link>
                     </div>
                 </div>
-               
+                <Button/>
             </div>
         </section>
 
