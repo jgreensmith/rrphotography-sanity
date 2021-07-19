@@ -15,7 +15,7 @@ function BlackWhite() {
                             return(
                                 <div className="gallery-square" key={index}>
                                     <a className="img-centre" href={`/images/bw-images/${BwImages.imageName}`}>
-                                        <img className={BwImages.cName} src={`/images/bw-images/small-${BwImages.imageName}`}></img>
+                                        <img className={BwImages.cName} src={`/images/bw-images/${BwImages.imageName}`}></img>
                                     </a> 
                                 </div>
                             )

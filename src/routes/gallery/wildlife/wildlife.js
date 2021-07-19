@@ -15,7 +15,7 @@ function Wildlife() {
                             return(
                                 <div className="gallery-square" key={index}>
                                     <a className="img-centre" href={`/images/wl-images/${WlImages.imageName}`}>
-                                        <img className={WlImages.cName} src={`/images/wl-images/small-${WlImages.imageName}`}></img>
+                                        <img className={WlImages.cName} src={`/images/wl-images/${WlImages.imageName}`}></img>
                                     </a> 
                                 </div>
                             )
