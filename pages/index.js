@@ -19,7 +19,7 @@ function Home() {
                 <meta charSet="utf-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <meta name="theme-color" content="#000000" />
-                <link rel="icon" href="%PUBLIC_URL%/images/icon.png" />
+                <link rel="icon" href="/images/icon.png" />
             </Head>
             <section className={styles.section}>
                 <div className={styles['carousel-container']}>

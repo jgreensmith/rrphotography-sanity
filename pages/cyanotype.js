@@ -18,7 +18,7 @@ const Cyanotype = ({ imageData }) => {
                             return(
                               <SRLWrapper>
                                 <div className={styles['gallery-square']} key={index}>
-                                  <a className={styles['img-centre']} href={urlFor(cyanotype.cyanotypeImage).quality(100).url()}>
+                                  <a className={styles['img-centre']} href={urlFor(cyanotype.cyanotypeImage).quality(100).fit("max").url()}>
                                     <img 
                                       className={styles.opacity}
                                       src={urlFor(cyanotype.cyanotypeImage).size(300, 300).quality(90).fit("min").url()} 

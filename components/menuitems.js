@@ -11,7 +11,7 @@ const MenuItems = [
     },
     {
         title: 'Cyanotype Art',
-        path: '/Cyanotype',
+        path: '/cyanotype',
         cName: 'dropdownLink'
     },
     {
