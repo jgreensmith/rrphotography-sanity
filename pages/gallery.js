@@ -18,7 +18,7 @@ function Gallery() {
                                     <img className={styles['img-fit']} src="images/home/ls-circle.jpg" alt="Landscape"></img>
                                 </div>
                                 <div className={styles['object-info-wrapper']}>
-                                    <h3 className={styles['blurb-header']}>Landscape Phohrefgraphy</h3>
+                                    <h3 className={styles['blurb-header']}>Landscape Photography</h3>
                                     <p className={styles.blurb}>Landscapes, Seascapes and Skyscapes</p>
                                 </div>
                             </a>
@@ -33,7 +33,7 @@ function Gallery() {
                                     <img className={styles['img-fit']} src="images/home/wl-circle.jpg" alt="Landscape"></img>
                                 </div>
                                 <div className={styles['object-info-wrapper']}>
-                                    <h3 className={styles['blurb-header']}>Wildlife Phohrefgraphy</h3>
+                                    <h3 className={styles['blurb-header']}>Wildlife Photography</h3>
                                     <p className={styles.blurb}>Flora and Fauna</p>
                                 </div>
                             </a>
@@ -63,7 +63,7 @@ function Gallery() {
                                     <img className={styles['img-fit']} src="images/home/bw-circle.jpg" alt="Landscape"></img>
                                 </div>
                                 <div className={styles['object-info-wrapper']}>
-                                    <h3 className={styles['blurb-header']}>Black & White Phohrefgraphy</h3>
+                                    <h3 className={styles['blurb-header']}>Black & White Photography</h3>
                                     <p className={styles.blurb}>The Natural World in Black & White</p>
                                 </div>
                             </a>

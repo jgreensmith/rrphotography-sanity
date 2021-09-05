@@ -1,5 +1,5 @@
 import { sanityClient, urlFor } from "../sanity"
-import Img from 'next/image';
+import Image from 'next/image';
 import { useNextSanityImage } from 'next-sanity-image';
 import { SRLWrapper } from 'simple-react-lightbox';
 
@@ -14,19 +14,25 @@ const Wildlife = ({ imageData }) => {
             <section className={styles.section}>
             <div className={styles['block-container']}>
                 <h1 className={`${styles["main-title"]} ${styles["heading"]}`}>Wildlife Photography</h1>
-                <SRLWrapper>
+                
                     <div className={styles['gallery-container']}>
                         {imageData.map((wildlife, index) => {
                             return(
+                              <SRLWrapper>
                                 <div className={styles['gallery-square']} key={index}>
-                                    <a href={wildlife.wildlifeImage}>
-                                        <img src={wildlife.wildlifeImage} alt="Wildlife" />
-                                    </a> 
+                                  <a className={styles['img-centre']} href={urlFor(wildlife.wildlifeImage).quality(100).url()}>
+                                    <img 
+                                      className={styles.opacity}
+                                      src={urlFor(wildlife.wildlifeImage).size(300, 300).quality(90).fit("min").url()} 
+                                      alt={wildlife.alt}
+                                    />
+                                  </a> 
                                 </div>
+                              </SRLWrapper>
                             )
                         })} 
                     </div>
-                </SRLWrapper>
+                
                 
 
             </div>
@@ -57,6 +63,3 @@ export const getServerSideProps = async () => {
   }
 
 export default Wildlife;
-
-// className={styles['img-centre']}
-{/* <Img {...imageProps} layout="responsive" sizes="(max-width: 800px) 100vw, 800px" /> */}

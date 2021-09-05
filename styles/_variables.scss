@@ -54,7 +54,7 @@ $font-color-secondary: #aaaaaa;
 .gallery-square {
   width: 300px;
   height: 300px;
-  background-color: $brand-secondary;
+  // background-color: $brand-secondary;
   margin: auto;
   padding: 0;
   box-sizing: border-box;
@@ -62,22 +62,28 @@ $font-color-secondary: #aaaaaa;
   align-content: center;
   display: flex;
   &:hover {
-    background-color: darkgrey;
     cursor: pointer;
+  }
+}
+.opacity {
+  opacity: 1;
+  &:hover {
+    opacity: 0.5;
   }
 }
 .img-centre {
   display: flex;
 }
-.img-landscape {
-  width: 300px;
-  margin: auto;
-}
-.img-portrait {
-  height: 300px;
-  width: auto;
-  margin: auto;
-}
+
+// .img-landscape {
+//   width: 300px;
+//   margin: auto;
+// }
+// .img-portrait {
+//   height: 300px;
+//   width: auto;
+//   margin: auto;
+// }
 
 @media screen and (max-width: 960px) {
   .block-container {
