@@ -1,32 +1,60 @@
-import React from 'react';
-import BwImages from './bw-images';
+import { sanityClient, urlFor } from "../sanity"
 import { SRLWrapper } from 'simple-react-lightbox';
 
 import styles from '../styles/Gallery/BlackWhite.module.scss';
 
-function BlackWhite() {
+const BlackWhite = ({ imageData }) => {
+    console.log(imageData)
+    
     return (
-        <section className={styles.section}>
+        <>
+        
+            <section className={styles.section}>
             <div className={styles['block-container']}>
-                <h1 className={`${styles["main-title"]} ${styles["heading"]}`}>Black & White Photography</h1>
-                <SRLWrapper>
+                <h1 className={`${styles["main-title"]} ${styles["heading"]}`}>Black and White Photography</h1>
+                
                     <div className={styles['gallery-container']}>
-                        {BwImages.map((BwImages, index) => {
+                        {imageData.map((blackwhite, index) => {
                             return(
+                              <SRLWrapper>
                                 <div className={styles['gallery-square']} key={index}>
-                                    <a className={styles['img-centre']} href={`/images/bw-images/${BwImages.imageName}`}>
-                                        <img className={BwImages.cName} src={`/images/bw-images/${BwImages.imageName}`} alt="black and white"></img>
-                                    </a> 
+                                  <a className={styles['img-centre']} href={urlFor(blackwhite.blackwhiteImage).quality(100).url()}>
+                                    <img 
+                                      className={styles.opacity}
+                                      src={urlFor(blackwhite.blackwhiteImage).size(300, 300).quality(90).fit("min").url()} 
+                                      alt={blackwhite.alt}
+                                    />
+                                  </a> 
                                 </div>
+                              </SRLWrapper>
                             )
                         })} 
                     </div>
-                </SRLWrapper>
-                
-                
             </div>
+           
         </section> 
+        
+       </> 
     )
 }
+
+export const getServerSideProps = async () => {
+    const query = '*[ _type == "blackwhite"]'
+    const imageData = await sanityClient.fetch(query)
+  
+    if (!imageData.length) {
+      return {
+        props: {
+          imageData: [],
+        },
+      }
+    } else {
+      return {
+        props: {
+          imageData,
+        },
+      }
+    }
+  }
 
 export default BlackWhite;

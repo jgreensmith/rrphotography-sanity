@@ -1,6 +1,4 @@
 import { sanityClient, urlFor } from "../sanity"
-import Image from 'next/image';
-import { useNextSanityImage } from 'next-sanity-image';
 import { SRLWrapper } from 'simple-react-lightbox';
 
 import styles from '../styles/Gallery/Wildlife.module.scss';
@@ -32,9 +30,6 @@ const Wildlife = ({ imageData }) => {
                             )
                         })} 
                     </div>
-                
-                
-
             </div>
            
         </section> 
