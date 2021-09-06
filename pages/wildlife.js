@@ -9,30 +9,30 @@ const Wildlife = ({ imageData }) => {
     return (
         <>
         
-            <section className={styles.section}>
+          <section className={styles.section}>
             <div className={styles['block-container']}>
                 <h1 className={`${styles["main-title"]} ${styles["heading"]}`}>Wildlife Photography</h1>
                 
-                    <div className={styles['gallery-container']}>
-                        {imageData.map((wildlife, index) => {
-                            return(
-                              <SRLWrapper>
-                                <div className={styles['gallery-square']} key={index}>
-                                  <a className={styles['img-centre']} href={urlFor(wildlife.wildlifeImage).quality(100).fit("max").url()}>
-                                    <img 
-                                      className={styles.opacity}
-                                      src={urlFor(wildlife.wildlifeImage).size(300, 300).quality(90).fit("min").url()} 
-                                      alt={wildlife.alt}
-                                    />
-                                  </a> 
-                                </div>
-                              </SRLWrapper>
-                            )
-                        })} 
-                    </div>
+                <div className={styles['gallery-container']}>
+                    {imageData.map((wildlife, index) => {
+                        return(
+                          <SRLWrapper>
+                            <div className={styles['gallery-square']} key={index}>
+                              <a className={styles['img-centre']} href={urlFor(wildlife.wildlifeImage).quality(100).fit("max").url()}>
+                                <img 
+                                  className={styles.opacity}
+                                  src={urlFor(wildlife.wildlifeImage).size(300, 300).quality(90).fit("min").url()} 
+                                  alt={wildlife.alt}
+                                />
+                              </a> 
+                            </div>
+                          </SRLWrapper>
+                        )
+                    })} 
+                </div>
             </div>
            
-        </section> 
+          </section> 
         
        </> 
     )

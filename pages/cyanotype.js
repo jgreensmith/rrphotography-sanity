@@ -9,30 +9,29 @@ const Cyanotype = ({ imageData }) => {
     return (
         <>
         
-            <section className={styles.section}>
+          <section className={styles.section}>
             <div className={styles['block-container']}>
                 <h1 className={`${styles["main-title"]} ${styles["heading"]}`}>Cyanotype Photography</h1>
                 
-                    <div className={styles['gallery-container']}>
-                        {imageData.map((cyanotype, index) => {
-                            return(
-                              <SRLWrapper>
-                                <div className={styles['gallery-square']} key={index}>
-                                  <a className={styles['img-centre']} href={urlFor(cyanotype.cyanotypeImage).quality(100).fit("max").url()}>
-                                    <img 
-                                      className={styles.opacity}
-                                      src={urlFor(cyanotype.cyanotypeImage).size(300, 300).quality(90).fit("min").url()} 
-                                      alt={cyanotype.alt}
-                                    />
-                                  </a> 
-                                </div>
-                              </SRLWrapper>
-                            )
-                        })} 
-                    </div>
+                <div className={styles['gallery-container']}>
+                    {imageData.map((cyanotype, index) => {
+                        return(
+                          <SRLWrapper>
+                            <div className={styles['gallery-square']} key={index}>
+                              <a className={styles['img-centre']} href={urlFor(cyanotype.cyanotypeImage).quality(100).fit("max").url()}>
+                                <img 
+                                  className={styles.opacity}
+                                  src={urlFor(cyanotype.cyanotypeImage).size(300, 300).quality(90).fit("min").url()} 
+                                  alt={cyanotype.alt}
+                                />
+                              </a> 
+                            </div>
+                          </SRLWrapper>
+                        )
+                    })} 
+                </div>
             </div>
-           
-        </section> 
+          </section> 
         
        </> 
     )
