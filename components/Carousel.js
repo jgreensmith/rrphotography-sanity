@@ -18,7 +18,7 @@ class HomeCarousel extends Component {
                     showArrows={false}
                     showStatus={false}
                     stopOnHover={false}
-                    showIndicators={true}
+                    showIndicators={false}
                 >
                     <div>
                         <img src="images/home/dog-og.jpg" />

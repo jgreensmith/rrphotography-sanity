@@ -57,6 +57,11 @@ function Navbar() {
                             <a className={styles['nav-link']} onClick={closeMobileMenu}>About</a>
                         </Link>
                     </li>
+                    <li className={styles['nav-item']}>
+                        <Link href="/blog">
+                            <a className={styles['nav-link']} onClick={closeMobileMenu}>Blog</a>
+                        </Link>
+                    </li>
                     <li 
                         className={styles['nav-item']}
                         onMouseEnter={onMouseEnter}
