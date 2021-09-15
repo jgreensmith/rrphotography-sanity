@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Button from '../components/Button';
 
-import styles from '../styles//Gallery/Gallery.module.scss';
+import styles from '../styles/Gallery/Gallery.module.scss';
 
 function Gallery() {
     return(
@@ -30,7 +30,7 @@ function Gallery() {
                         <Link href="/wildlife">
                             <a className={styles.decoration}>
                                 <div className={styles['object-img-wrapper']}>
-                                    <img className={styles['img-fit']} src="images/home/wl-circle.jpg" alt="Landscape"></img>
+                                    <img className={styles['img-fit']} src="images/home/wl-circle.jpg" alt="Wildlife"></img>
                                 </div>
                                 <div className={styles['object-info-wrapper']}>
                                     <h3 className={styles['blurb-header']}>Wildlife Photography</h3>
@@ -45,7 +45,7 @@ function Gallery() {
                         <Link href="/cyanotype">
                             <a className={styles.decoration}>
                                 <div className={styles['object-img-wrapper']}>
-                                    <img className={styles['img-fit']} src="images/home/c-circle.jpg" alt="Landscape"></img>
+                                    <img className={styles['img-fit']} src="images/home/c-circle.jpg" alt="cyanotype"></img>
                                 </div>
                                 <div className={styles['object-info-wrapper']}>
                                     <h3 className={styles['blurb-header']}>Cyanotype Art</h3>
@@ -60,7 +60,7 @@ function Gallery() {
                         <Link href="/black-white">
                             <a className={styles.decoration}>
                                 <div className={styles['object-img-wrapper']}>
-                                    <img className={styles['img-fit']} src="images/home/bw-circle.jpg" alt="Landscape"></img>
+                                    <img className={styles['img-fit']} src="images/home/bw-circle.jpg" alt="blackwhite"></img>
                                 </div>
                                 <div className={styles['object-info-wrapper']}>
                                     <h3 className={styles['blurb-header']}>Black & White Photography</h3>
