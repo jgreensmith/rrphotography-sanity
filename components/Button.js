@@ -22,7 +22,7 @@ const Button = () => {
                         </form>
                     </div>
                 </div>
-                <div className={styles['btn-card']}>
+                {/* <div className={styles['btn-card']}>
                     <div className={styles['btn-info-wrapper']}>
                         <p className={styles['btn-text']}>
                             Made in the Marches Resident Artist 
@@ -37,10 +37,10 @@ const Button = () => {
                             </button>
                         </form>
                     </div>
-                </div>
+                </div> */}
                 
             </div>
-            <div className={styles.line}></div>
+            {/* <div className={styles.line}></div> */}
         </>
         
             
