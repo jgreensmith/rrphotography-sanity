@@ -21,7 +21,7 @@ const Cyanotype = ({ imageData }) => {
                               <a className={styles['img-centre']} href={urlFor(cyanotype.cyanotypeImage).quality(100).fit("max").url()}>
                                 <img 
                                   className={styles.opacity}
-                                  src={urlFor(cyanotype.cyanotypeImage).size(300, 300).quality(90).fit("min").url()} 
+                                  src={urlFor(cyanotype.cyanotypeImage).size(600, 600).quality(90).fit("min").url()} 
                                   alt={cyanotype.alt}
                                 />
                               </a> 

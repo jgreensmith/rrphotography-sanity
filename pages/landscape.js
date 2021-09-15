@@ -21,7 +21,7 @@ const Landscape = ({ imageData }) => {
                               <a className={styles['img-centre']} href={urlFor(landscape.landscapeImage).quality(100).url()}>
                                 <img 
                                   className={styles.opacity}
-                                  src={urlFor(landscape.landscapeImage).size(300, 300).quality(90).fit("min").url()} 
+                                  src={urlFor(landscape.landscapeImage).size(600, 600).quality(90).fit("min").url()} 
                                   alt={landscape.alt}
                                 />
                               </a> 
