@@ -1,4 +1,5 @@
 import { sanityClient, urlFor } from "../sanity"
+import Head from 'next/head';
 import { SRLWrapper } from 'simple-react-lightbox';
 
 import styles from '../styles/Gallery/BlackWhite.module.scss';
@@ -8,7 +9,15 @@ const BlackWhite = ({ imageData }) => {
     
     return (
         <>
-        
+          <Head>
+            <title>Black & White | Rebecca Reynolds Photography</title>
+            <meta charSet="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <meta name="theme-color" content="#000000" />
+            <meta name="description" property="og:description" content="click image to inspect detail" />
+            <meta property="og:title" content="Black & White | Rebecca Reynolds Photography" />
+            <link rel="icon" href="/images/icon.png" />
+          </Head>
           <section className={styles.section}>
             <div className={styles['block-container']}>
                 <h1 className={`${styles["main-title"]} ${styles["heading"]}`}>Black and White Photography</h1>

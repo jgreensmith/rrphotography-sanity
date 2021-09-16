@@ -1,12 +1,22 @@
 import React from 'react';
 import Link from 'next/link';
+import Head from 'next/head';
 import Button from '../components/Button';
 
 import styles from '../styles/Gallery/Gallery.module.scss';
 
 function Gallery() {
     return(
-
+        <>
+        <Head>
+            <title>Gallery | Rebecca Reynolds Photography</title>
+            <meta charSet="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <meta name="theme-color" content="#000000" />
+            <meta name="description" property="og:description" content="A creative and diverse collection of Wildlife, Black and White, Landscape and Cyanotype images" />
+            <meta property="og:title" content="Gallery | Rebecca Reynolds Photography" />
+            <link rel="icon" href="/images/icon.png" />
+        </Head>
         <section className={styles.section}>
             <div className={styles['block-container']}>
             <h1 className={`${styles["main-title"]} ${styles["heading"]}`}>Gallery</h1>
@@ -75,6 +85,9 @@ function Gallery() {
                 <Button/>
             </div>
         </section>
+        </>
+
+        
 
     )
 };

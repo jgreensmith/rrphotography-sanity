@@ -1,9 +1,20 @@
 import React from 'react';
+import Head from 'next/head';
 
 import styles from '../styles/About.module.scss';
 
 function About() {
     return (
+        <>
+        <Head>
+            <title>About | Rebecca Reynolds Photography</title>
+            <meta charSet="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <meta name="theme-color" content="#000000" />
+            <meta name="description" property="og:description" content="My aim is for my photography and art to show my love for the British countryside and the tranquility it gives." />
+            <meta property="og:title" content="About | Rebecca Reynolds Photography" />
+            <link rel="icon" href="/images/icon.png" />
+        </Head>
         <section className={styles.section}>
             <div className={styles['block-container']}>
                 <h1 className={`${styles["main-title"]} ${styles["heading"]}`}>About Me</h1>
@@ -58,6 +69,8 @@ function About() {
                 </div>
             </div>
         </section> 
+        </>
+        
     )
 }
 

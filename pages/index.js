@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Head from 'next/head';
 // import Image from 'next/image'
 
 
@@ -18,6 +18,9 @@ function Home() {
                 <meta charSet="utf-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <meta name="theme-color" content="#000000" />
+                <meta name="description" property="og:description" content="Rebecca Reynolds Photography provides focus to the natural world. A creative and diverse collection of Wildlife, Black and White, Landscape and Cyanotype images" />
+                <meta property="og:title" content="Rebecca Reynolds Photography" />
+                <meta property="og:site_name" content="rebeccareynoldsphotography.com" />
                 <link rel="icon" href="/images/icon.png" />
             </Head>
             <section className={styles.section}>

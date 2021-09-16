@@ -1,5 +1,6 @@
 import { sanityClient, urlFor } from "../sanity"
 import { SRLWrapper } from 'simple-react-lightbox';
+import Head from 'next/head';
 
 import styles from '../styles/Gallery/Landscape.module.scss';
 
@@ -8,7 +9,15 @@ const Landscape = ({ imageData }) => {
     
     return (
         <>
-        
+          <Head>
+            <title>Landscape | Rebecca Reynolds Photography</title>
+            <meta charSet="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <meta name="theme-color" content="#000000" />
+            <meta name="description" property="og:description" content="click image to inspect detail" />
+            <meta property="og:title" content="Landscape | Rebecca Reynolds Photography" />
+            <link rel="icon" href="/images/icon.png" />
+          </Head>
           <section className={styles.section}>
             <div className={styles['block-container']}>
                 <h1 className={`${styles["main-title"]} ${styles["heading"]}`}>Landscape Photography</h1>
