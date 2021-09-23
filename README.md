@@ -1,13 +1,20 @@
+# Rebecca Reynolds Photography
+
+NEXTJS. The app has been converted from create-react-app to nextjs. \ 
+the app uses sanity as a headless CMS and is deployed using vercel. \
+The app contains a blog, contact, about, gallery and home page. \
+It is for a professional photographer so i had to deal with very high quality images. 
+
 ## URL
 
 https://www.rebeccareynoldsphotography.com/
 
 ## Tech Stack
 React\
+NextJS\
 node.js\
 SCSS\
-AWS-Amplify\
-GraphQL
+sanity\
 
 ### `npm start`
 
