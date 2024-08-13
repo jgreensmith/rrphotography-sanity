@@ -8,12 +8,12 @@ const Button = () => {
             <div className={styles.line}></div>
             <div className={styles['btn-container']}>
                 <div className={styles['btn-card']}>
-                    <div className={styles['btn-info-wrapper']}>
+                    {/* <div className={styles['btn-info-wrapper']}>
                         <p className={styles['btn-text']}>
                             Shop here via Etsy
                         </p>
                         <br></br>
-                    </div>
+                    </div> */}
                     <div className={`${styles["btn-wrapper"]} ${styles["top-pad"]}`}>
                         <form className={styles['form-center']} action="https://www.etsy.com/uk/shop/HergestMoonlight" method="get" target="_blank" rel="noreferrer">
                             <button className={styles['etsy-btn']}>
