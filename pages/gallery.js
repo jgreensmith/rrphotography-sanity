@@ -82,7 +82,6 @@ function Gallery() {
                         </Link>
                     </div>
                 </div>
-                <Button/>
             </div>
         </section>
         </>

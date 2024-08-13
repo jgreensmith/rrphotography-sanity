@@ -5,7 +5,6 @@ import Head from 'next/head';
 import React from 'react';
 import Link from 'next/link';
 import HomeCarousel from '../components/Carousel';
-import Button from '../components/Button';
 
 import styles from '../styles/Home.module.scss';
 
@@ -30,9 +29,7 @@ function Home() {
                 <div className={styles['block-container']}>
                     <h2 className={styles['home-header']}>Welcome to Rebecca Reynolds Photography</h2>
                     <p className={`${styles["main-title"]} ${styles["sm"]}`}>Bringing focus to the natural world.</p>
-                    <div className={styles['btn-padding']}>
-                        <Button/>
-                    </div>
+                    
                     <div className={styles['object-container']}>
                         <div className={styles['object-wrapper']}>
                             <Link href="/landscape">
