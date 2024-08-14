@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
 import Head from 'next/head';
-import Button from '../components/Button';
 
 import styles from '../styles/Gallery/Gallery.module.scss';
 

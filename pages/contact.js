@@ -1,22 +1,11 @@
 import React from 'react';
 import Head from 'next/head';
-import emailjs from 'emailjs-com';
 
 import styles from '../styles/Contact.module.scss';
 
 export default function Contact() {
 
-  function sendEmail(e) {
-    e.preventDefault();
-
-    emailjs.sendForm(process.env.SERVICE_ID, process.env.TEMPLATE_ID, e.target, process.env.USER_ID )
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
-      e.target.reset()
-  }
+  
 
   return (
       <>
